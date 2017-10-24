@@ -1,0 +1,147 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app{
+  font-family: 'Oswald', sans-serif;
+  background-image: url('http://leysaflores.com/wp-content/uploads/WallpaperGoldMarble_1900x1200.jpg');
+  // background-color: #000;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  height: 100vh;
+  #main-container{
+    height: 100%;
+    background-color: #FFF;
+    padding: 0 70px;
+    #router-content{
+      height: 100%;
+      #nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        a{
+          color: #000;
+          text-decoration: none;
+          &:visited{
+            color: #000;
+          }
+        }
+        .nav-group-left{
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: url('https://cdn.shopify.com/s/files/1/1750/4945/products/bright_gold_foil_cardstock-1_e65f7c14-6be5-4192-bd51-6cbef66c81f2_1000x.jpg?v=1490204726');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+          .home-nav-link{
+            font-size: 42px;
+          }
+        }
+        .nav-group-right{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a{
+            margin-left: 70px;
+            font-size: 14px;
+            &:hover{
+              color: grey;
+            }
+          }
+          .active-nav-link{
+            color: grey;
+          }
+        }
+      }
+      #main{
+        height: calc(100% - 162px);
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+#home-container{
+  height: 100%;
+  display: flex;
+  .home-content-block{
+    width: 50%;
+  }
+  .auby{
+    background-image: url('http://i.imgur.com/6u4jNLE.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .about-me{
+    background-color: grey;
+    color: #FFF;
+    padding: 150px 0;
+    .home-content-summary{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .home-content-contact-links{
+      padding: 100px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        color: #FFF;
+        text-decoration: none;
+        &:hover{
+          cursor: pointer;
+          color: #000;
+        }
+        &:visited{
+          color: #FFF;
+        }
+      }
+      .fa{
+        border-top: 1px solid #FFF;
+        font-size: 24px;
+        padding: 20px;
+        &:hover{
+          color: #000;
+        }
+        &:first-child{
+          padding-left: 35px;
+        }
+        &:last-child{
+          padding-right: 35px;
+        }
+      }
+    }
+  }
+}
+
+#portfolio-container{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  .portfolio-block{
+    height: 100%;
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    .portfolio-block-content{
+      border: 1px solid black;
+      padding: 10px;
+      width: 30%;
+      text-align: center;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
